@@ -141,12 +141,13 @@ data path: /export/fastdfs/storage/data, mkdir sub dir done.
 
 
 ## ip
-[root@host03 ~]# docker exec -it fdfs_tracker bash
-[root@host03 /]# vi /etc/fdfs/client.conf
-`tracker_server=192.168.163.142:22122`
+[root@host03 ~]# docker exec -it fdfs_tracker bash    
+[root@host03 /]# vi /etc/fdfs/client.conf  
+`tracker_server=192.168.163.142:22122`  
 
-[root@host03 ~]# docker exec -it fdfs_tracker bash
-fdfs_upload_file /etc/fdfs/client.conf /etc/hosts.txt
+[root@host03 ~]# docker exec -it fdfs_tracker bash   
+ 
+fdfs_upload_file /etc/fdfs/client.conf /etc/hosts.txt  
 
 
 
