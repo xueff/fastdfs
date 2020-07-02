@@ -140,4 +140,14 @@ data path: /export/fastdfs/storage/data, mkdir sub dir done.
 [2019-05-09 01:54:44] INFO - file: storage_sync.c, line: 2732, successfully connect to storage server 192.168.25.124:23001
 
 
+## ip
+[root@host03 ~]# docker exec -it fdfs_tracker bash
+[root@host03 /]# vi /etc/fdfs/client.conf
+`tracker_server=192.168.163.142:22122`
+
+[root@host03 ~]# docker exec -it fdfs_tracker bash
+fdfs_upload_file /etc/fdfs/client.conf /etc/hosts.txt
+
+
+
 
