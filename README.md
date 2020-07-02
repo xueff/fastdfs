@@ -151,7 +151,8 @@ data path: /export/fastdfs/storage/data, mkdir sub dir done.
 [root@host03 ~]# fdfs_upload_file /etc/fdfs/client.conf /etc/hosts   // fdfs_upload_file  storage配置文件的绝对路径   本地文件  
 group1/M00/00/00/wKijA179fX6AMl12AAAAnrLoM8Y9979536  
 
-浏览器 http://192.168.163.3:8081/http://192.168.163.3:8081/group1/M00/00/00/rBEAAl79egCASbI4AAAAnrLoM8Y5324589  
+浏览器  curl http://192.168.163.3:8081/group1/M00/00/00/wKijA179fX6AMl12AAAAnrLoM8Y9979536  
+
 
 
 
