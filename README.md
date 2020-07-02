@@ -140,14 +140,19 @@ data path: /export/fastdfs/storage/data, mkdir sub dir done.
 [2019-05-09 01:54:44] INFO - file: storage_sync.c, line: 2732, successfully connect to storage server 192.168.25.124:23001
 
 
-## ip
+## 配置 
+### 192.168.163.142  192.168.163.3  
 [root@host03 ~]# docker exec -it fdfs_tracker bash    
 [root@host03 /]# vi /etc/fdfs/client.conf  
 `tracker_server=192.168.163.142:22122`  
+[root@host03 /]#  mkdir -p  mkdir -p /home/yuqing/fastdfs  
 
-[root@host03 ~]# docker exec -it fdfs_tracker bash   
- 
-fdfs_upload_file /etc/fdfs/client.conf /etc/hosts.txt  
+[root@host03 ~]# docker exec -it fdfs_tracker bash    //192.168.163.3   
+[root@host03 ~]# fdfs_upload_file /etc/fdfs/client.conf /etc/hosts   // fdfs_upload_file  storage配置文件的绝对路径   本地文件  
+group1/M00/00/00/wKijA179fX6AMl12AAAAnrLoM8Y9979536  
+
+浏览器 http://192.168.163.3:8081/http://192.168.163.3:8081/group1/M00/00/00/rBEAAl79egCASbI4AAAAnrLoM8Y5324589  
+
 
 
 
